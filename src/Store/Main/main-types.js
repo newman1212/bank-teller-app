@@ -1,0 +1,5 @@
+export const MAIN_ACTION_TYPES ={
+	SET_TELLER_NAME:'SET_TELLER_NAME'
+
+
+}
