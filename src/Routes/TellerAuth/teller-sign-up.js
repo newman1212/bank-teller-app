@@ -1,4 +1,7 @@
-import {Link,useNavigate} from 'react-router-dom';
+import {Link,
+// useNavigate
+} 
+from 'react-router-dom';
 import { useState } from 'react';
 
 
@@ -20,8 +23,8 @@ const {fullName,email,password} = formFields;
 
 
 
-const navigate = useNavigate()
-const goHome = () => navigate('/home');
+// const navigate = useNavigate()
+// const goHome = () => navigate('/home');
 
 
 const handleChange =(event) =>{
@@ -35,26 +38,26 @@ const handleChange =(event) =>{
 
 
 
-  const onSubmitRegister = () => {
-    fetch('http://localhost:3001/register-teller',{
-      method: 'post',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        email: email,
-        password:password,
-        name: fullName
-      })
-    })
-      .then(response => response.json())
-      .then(user=> console.log(user , 'SERVER RESPONSE'))
-      .then(user=> {if (user){goHome()}
-    })
+//   const onSubmitRegister = () => {
+//     fetch('http://localhost:3001/register-teller',{
+//       method: 'post',
+//       headers: {'Content-Type': 'application/json'},
+//       body: JSON.stringify({
+//         email: email,
+//         password:password,
+//         name: fullName
+//       })
+//     })
+//       .then(response => response.json())
+//       .then(user=> console.log(user , 'SERVER RESPONSE'))
+//       .then(user=> {if (user){goHome()}
+//     })
 
-    }
+//     }
   
   
 
-console.log(formFields,'FORMFIELDS')
+// console.log(formFields,'FORMFIELDS')
 
 
 
@@ -116,7 +119,8 @@ console.log(formFields,'FORMFIELDS')
         
             </fieldset>
             <div className="" >
-              <input onClick = {onSubmitRegister}
+              <input 
+              // onClick = {onSubmitRegister}
                 className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib light-blue"
                 type="submit"
                 value="Create Account"
