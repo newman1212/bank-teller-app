@@ -16,7 +16,7 @@ import Register from './Routes/Register/register';
 import Withdraw from './Routes/Withdraw/withdraw';
 import WithdrawalStatus from './Routes/Withdraw/withdrawal-status';
 import Report from './Routes/Report/report';
-import NavBar from './Routes/Nav/nav';
+// import NavBar from './Routes/Nav/nav';
 import TellerSignUp from './Routes/TellerAuth/teller-sign-up';
 import TellerSignIn from './Routes/TellerAuth/teller-sign-in';
 import AuthPage from './Routes/Auth-Page/auth-page';
@@ -87,6 +87,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
    
     </React.StrictMode>
 );
+
+reportWebVitals();
 
 
 
